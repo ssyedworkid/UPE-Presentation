@@ -29,8 +29,8 @@ jobs:
 
       - name: Install and build
         run: |
-          npm ci
-          npm run build -- --base="./"
+          npm install
+          npx vite build --base="./"
 
       - uses: actions/configure-pages@v5
 
