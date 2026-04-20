@@ -24,12 +24,11 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
+          node-version: 20
 
       - name: Install and build
         run: |
-          npm install
+          npm install --no-audit --no-fund
           npx vite build --base="./"
 
       - uses: actions/configure-pages@v5
