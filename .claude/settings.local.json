@@ -8,7 +8,15 @@
       "Bash(curl -s http://localhost:5555/src/main.jsx)",
       "Bash(pkill -f \"vite --port 5555\")",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git branch:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git remote:*)",
+      "Bash(npm -v)",
+      "Bash(npm run:*)",
+      "Bash(grep -o '\\\\./assets/[^`\"]*' /Users/ssyed/Documents/GitHub/upe/dist/assets/index-Dej7sL2C.js)",
+      "Bash(grep -oP 'assets/[a-z]+/[^`\"\\\\\\\\]+' /Users/ssyed/Documents/GitHub/upe/dist/assets/index-Dej7sL2C.js)",
+      "Bash(grep:*)"
     ]
   }
 }

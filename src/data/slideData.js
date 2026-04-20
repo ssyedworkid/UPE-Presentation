@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 export const meta = {
   title: "From Student to Engineer: What Nobody Tells You",
   presenters: "Suhaan & Siddh",
@@ -6,8 +8,8 @@ export const meta = {
 
 export const suhaan = {
   name: "Suhaan",
-  photo: "/assets/photos/suhaan.jpg",
-  logo: "/assets/logos/ssc.png",
+  photo: `${base}assets/photos/suhaan.jpg`,
+  logo: `${base}assets/logos/ssc.png`,
   bullets: [
     "KU — CS & Math | Minors: BME, Cybersecurity",
     "Software Engineer @ SS&C Technologies",
@@ -34,8 +36,8 @@ export const suhaan = {
 
 export const siddh = {
   name: "Siddh",
-  photo: "/assets/photos/siddh.jpg",
-  logo: "/assets/logos/t-mobile.png",
+  photo: `${base}assets/photos/siddh.jpg`,
+  logo: `${base}assets/logos/t-mobile.png`,
   bullets: [
     "KU — CS | Certificate: Cybersecurity",
     "Software Engineer @ T-Mobile",

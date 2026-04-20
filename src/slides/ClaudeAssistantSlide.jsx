@@ -6,6 +6,8 @@ import {
   faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
 
+const base = import.meta.env.BASE_URL;
+
 export default function ClaudeAssistantSlide() {
   return (
     <section>
@@ -38,7 +40,7 @@ export default function ClaudeAssistantSlide() {
                 First 6 Months
               </div>
               <img
-                src="/assets/infographics/contrib-before.png"
+                src={`${base}assets/infographics/contrib-before.png`}
                 alt="GitHub contributions before"
                 style={{ width: "100%", borderRadius: 8, marginBottom: 10 }}
               />
@@ -66,7 +68,7 @@ export default function ClaudeAssistantSlide() {
                 Last 2 Months
               </div>
               <img
-                src="/assets/infographics/contrib-after.png"
+                src={`${base}assets/infographics/contrib-after.png`}
                 alt="GitHub contributions after"
                 style={{ width: "100%", borderRadius: 8, marginBottom: 10 }}
               />
@@ -99,7 +101,7 @@ export default function ClaudeAssistantSlide() {
             flex: 1, display: "flex", flexDirection: "column", justifyContent: "center",
           }}>
             <img
-              src="/assets/infographics/cost.png"
+              src={`${base}assets/infographics/cost.png`}
               alt="Claude usage cost"
               style={{ width: "100%", borderRadius: 8, marginBottom: 14 }}
             />
