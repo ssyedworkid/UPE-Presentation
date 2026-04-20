@@ -27,9 +27,12 @@ jobs:
           node-version: 20
           cache: npm
 
-      - run: npm ci
+      - run: npm install
 
-      - run: ./node_modules/.bin/vite build --base="./"
+      - name: Build
+        run: |
+          ls node_modules/.bin/ | grep vite || true
+          npx --no-install vite build --base="./"
 
       - uses: actions/configure-pages@v5
 
